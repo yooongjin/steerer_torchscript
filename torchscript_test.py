@@ -64,8 +64,6 @@ def main():
         cv_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB)
 
         height, width, _ = cv_image.shape
-        cv_image = cv2.resize(cv_image, dsize=(width//4, height//4))
-
         input_image = torch.from_numpy(cv_image).float()
         input_image = input_image.unsqueeze(0).cuda()
         start_time = time.time()
