@@ -71,11 +71,11 @@ def parse_args():
 
     parser.add_argument('--cfg',
                         help='experiment configure file name',
-                        default="/home/cho092871/Desktop/Networks/STEERER/configs/QNRF_final.py",
+                        default="configs/QNRF_final.py",
                         type=str)
     parser.add_argument('--checkpoint',
                     help='experiment configure file name',
-                    default="/home/cho092871/Desktop/Networks/STEERER/pretrained/QNRF_mae_77.8_mse_138.0.pth",
+                    default="pretrained/QNRF_mae_77.8_mse_138.0.pth",
                     type=str)
     parser.add_argument('opts',
                         help="Modify config options using the command-line",
